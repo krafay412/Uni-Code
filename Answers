@@ -1,0 +1,130 @@
+Q1(for loops):
+i)
+mylist=[]
+for i in range(11,42,5):
+    mylist.append(i)
+print(mylist)
+
+ii)
+mylist=[]
+for i in range(3,34,5):
+    mylist.append(i)
+print(mylist)
+
+iii)
+mylist=[]
+for i in range(20,10,-3):
+    mylist.append(i)
+    mylist.append(i)
+print(mylist)
+
+
+Q2:
+print("  " + "***" + "  ")
+print(" " + "*" + "   " + "*")
+print(" " + "*" + "   " + "*")
+print(" " + "*****" + "  ")
+print(" " + "*" + "   " + "*")
+print(" " + "*" + "   " + "*")
+print(" " + "*" + "   " + "*")
+
+Q3:(Triangles):
+def CheckTriangle(side1,side2,side3):
+    if side1 == side2 and side1 == side3 and side2 == side3:
+        print("EQUILATERAL TRIANGLE!")
+    elif side1 != side2 and side1 != side3 and side2 != side3:
+        print("SCALENE TRIANGLE!")
+    else:
+        print("ISOSCELES!")
+
+Q4
+def stats(filename):
+    try:
+        sf = open(filename,"rt")
+        lines = 0
+        wordcount = 0
+        charachtercount = 0
+        Recline = sf.readline().strip()
+        lines += 1
+        while Recline != "":
+            x = len(Recline)
+            for i in range(x):
+                thischar = Recline[i]
+                if thischar == " ":
+                    wordcount += 1
+                else:
+                    charachtercount += 1
+            wordcount += 1
+            Recline = sf.readline().strip()
+            lines += 1
+        lines -= 1
+        sf.close()
+        print("Line count: ",lines)
+        print("W: ",wordcount)
+        print("C: ",charachtercount)
+    except IOError:
+        print("File not found")
+
+Q5:
+Array = [37,2,6,4,90,45,67,21]
+Array.sort()
+print(Array)
+
+Q6:
+def Check():
+    Num1 = float(input("Num1: "))
+    Num2 = float(input("Num2: "))
+    Num3 = float(input("Num3: "))
+    Num4 = float(input("Num4: "))
+    Avg = float((Num1+Num2+Num3)/3)
+    if Avg == Num4:
+        print("Equal")
+    else:
+        print("Not Equal")
+
+Q7:
+def Calculate():
+    numyears = int(input("No. of years: "))
+    monthlypay = int(input("Monthly pay: "))
+    Pay = numyears * (0.5 * monthlypay)
+    if numyears > 10:
+        yearsworkedafter = numyears - 10
+        Pay = Pay + (yearsworkedafter * 2500)
+    return Pay
+
+print(Calculate())
+
+Q8:
+def Strings(namelist):
+    count = 0
+    for i in range(len(namelist)):
+        ThisString = namelist[i]
+        if len(ThisString) >= 2:
+            ThisString = ThisString.upper()
+            if ThisString[0] == ThisString[-1]:
+                count += 1
+    return count
+
+
+
+Q9:Two Lists:
+def CommonNumber(list1,list2):
+    for i in range(len(list1)):
+        for j in range(len(list2)):
+            if list1[i] == list2[j]:
+                return True
+    return False
+Q10:
+def NextAlphabet():
+    Char = input("Enter Alphabet: ")
+    if Char.upper() >= "A" and Char.upper() <= "Z":
+        if Char.upper() == "Z":
+            print(f'{Char} is the last Alphabet')
+        else:
+            value = ord(Char)
+            value += 1
+            Char = chr(value)
+            print("The next Alphabet is:",Char)
+    else:
+        print("ENTERED Char is not an alphabet")
+        print("Special Charachter:",Char)
