@@ -60,8 +60,8 @@ def stats(filename):
         lines -= 1
         sf.close()
         print("Line count: ",lines)
-        print("W: ",wordcount)
-        print("C: ",charachtercount)
+        print("WordCount: ",wordcount)
+        print("CharachterCount: ",charachtercount)
     except IOError:
         print("File not found")
 
