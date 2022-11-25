@@ -1,0 +1,50 @@
+1.By using for loop, generate the following series
+
+a.	11 16 21 26 31 36 41
+b.	3 8 13 18 23 28 33
+c.	20 20 17 17 14 14 11
+  
+2. Write a Python program to print alphabet pattern 'A'.
+  ***                                                                   
+ *   *                                                                  
+ *   *                                                                  
+  ****                                                                  
+ *   *                                                                  
+ *   *                                                                  
+ *   *
+3.  Write a Python program to check a triangle is equilateral, isosceles or scalene.  
+Note :
+An equilateral triangle is a triangle in which all three sides are equal.
+A scalene triangle is a triangle that has three unequal sides.
+An isosceles triangle is a triangle with (at least) two equal sides.
+
+Expected Output:
+Input lengths of the triangle sides:                                    
+x: 12                                                                    
+y: 12                                                                    
+z: 12                                                                   
+Equilateral  triangle 
+
+4. Write a function stats() that takes one input argument: the name of a text file. The function should print, on the screen, the number of lines, words, and characters in the file; your function should open the file only once. >>> stats('example.txt') File: example.txt line count: 3 word count: 20 character count: 98
+
+
+5. Create a Python program that includes an array holding elements
+               [37, 2, 6,4,90,45,67,21]
+And sort all the array elements in ascending order.
+
+6.  Implement a program that requests four numbers (integer or floating-point) from the user. 
+Your program should compute the average of the first three numbers and compare the average to the fourth number. 
+If they are equal, your program should print 'Equal' on the screen. 
+>>> Enter first number: 4.5 Enter second number: 3 Enter third number: 3 Enter last number: 3.5 Equal
+
+7.Write a programme that calculates the final bonus of an employee. 
+The bonus is calculated by  multiplying the number of years that employee has worked for the company by 50% of their monthly pay.
+If the user has worked over 10 years, then for each year after the 10th year,the Employee gets 2500 added to the final bonus.   
+
+8. Write a Python program to count the number of strings
+where the string length is 2 or more and the first and last character are same from a given list of strings.
+      
+9.  Write a Python function that takes two lists and returns True if they have at least one common member.
+
+10.Take an alphabet as an input from the user and display the next alphabet.
+If the user enters a special charachter,The programme should display that the charachter entered is a special charachter. 
