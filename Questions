@@ -25,7 +25,9 @@ y: 12
 z: 12                                                                   
 Equilateral  triangle 
 
-4. Write a function stats() that takes one input argument: the name of a text file. The function should print, on the screen, the number of lines, words, and characters in the file; your function should open the file only once. >>> stats('example.txt') File: example.txt line count: 3 word count: 20 character count: 98
+4. Write a function stats() that takes one input argument: the name of a text file.
+The function should print, on the screen, the number of lines, words, and characters in the file; your function should open the file only once. 
+>>> stats('example.txt') File: example.txt line count: 3 word count: 20 character count: 98
 
 
 5. Create a Python program that includes an array holding elements
